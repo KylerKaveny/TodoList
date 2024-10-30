@@ -1,3 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
-    background-color: pink;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topHeader {
+    display: flex;
+    flex: 1;
+    background-color: rgb(175, 212, 224);
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 25px;
+}
+
+.mainHeader {
+    font-size: 56px;
+    text-align: center;
+}
+
+.contentContainer {
+    display: flex;
+    background-color: white;
+    flex: 20;
+    margin: 5px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(208, 221, 219);
+}
+
+.sidebarHeader {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.createNewProjectBtn {
+    flex: 0.5;
+    border-radius: 10px;
+    background-color: rgb(58, 190, 135);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.projectList {
+    display: flex;
+    justify-content: center;
+    flex: 10;
+    overflow: scroll;
+}
+
+.projectBtn {
+    height: 40px;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    font-size: 1rem;
+    background-color: rgb(141, 228, 155);
+    font-weight: 550;
+    border-radius: 30px;
+}
+
+.projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 7;
+    background-color: rgb(220, 237, 252);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 223, 168);
+    width: 95%;
+    height: 95%;
+    border: 2px, solid, yellow;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.projectContentHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.headerName {
+    flex: 10;
+    font-size: 48px;
+    text-align: center;
+}
+
+.createTodoBtn {
+    text-align: center;
+    padding: 0;
+    flex: 1;
+    font-size: 5rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 10px;
+}
+
+.listOfTodosContainer {
+    overflow: scroll;
+    width: 95%;
+    font-size: 28px;
+    font-weight: 520;
+    flex: 10;
+    padding: 50px;
+    margin: 10px;
+    border: 5px, dotted, lightgray;
 }
